@@ -105,6 +105,12 @@ header .nav-link:hover::after{
     width: 100%;
     transition: all .4s ease-in-out;
 }
+.slider_item{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 75vh;
+}
 .carousel_block  .owl-dots{
     display: flex;
     justify-content: center;
@@ -136,12 +142,12 @@ header .nav-link:hover::after{
 .search_block{
     background-color: rgba(255, 240, 240, 1);
     padding: 20px 28px;
-    max-width: 380px;
-    position: absolute;
+     max-width: 380px;
+     position: absolute;
     left: 100px;
     top: 50%;
     transform: translateY(-50%);
-    z-index: 9;
+    z-index: 9; 
     border: 1px solid rgba(184, 184, 184, 1);
 }
 .search_block h2{
@@ -365,7 +371,8 @@ label[data-color="black"]  { background-color: #000000; }
     display: flex;
     justify-content:center;
     align-items: center;
-    margin: 24px 0;
+    margin-top: 15px;
+    margin-bottom: 24px;
 }
 .cars_list_title h2{
     font-size: 22px;
@@ -524,7 +531,7 @@ button:hover{
 
 footer{
     background-color: rgb(243, 244, 244);
-    padding: 50px 0px;
+    padding: 50px 0px 0px;
     margin-top: -20px;
 }
 footer p {
@@ -650,9 +657,6 @@ footer a {
 .mobile_nav .nav-link:hover::after{
     display: none;
 }
-/* .mobile_nav .navbar-toggler{
-   b
-} */
 
 /* toggle css animation  */
 
@@ -766,4 +770,32 @@ button.navbar-toggler:focus{
 }
 .ad_carousel .owl-nav .owl-next{
     right: 20px;
+}
+
+.mobile_nav .dropdown-menu[data-bs-popper] {
+     right: 60px !important;
+     left: unset;
+}
+.mobile_nav .dropdown-menu.show{
+    width: fit-content;
+    display: block;
+    top: 60px;
+    right: 20px !important;
+    padding: 15px;
+    border-radius: 2px;
+    border:  1px solid rgba(184, 184, 184, 1);
+    background-color: rgba(255, 240, 240, 1);
+}
+.mobile_nav .dropdown-toggle::after{
+    display: none !important;
+}
+.copyright{
+    background-color:rgba(203, 10, 7, 1) ;
+    padding: 4px 0;
+    margin-top: 40px;
+}
+.copyright p{
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
 }

@@ -106,10 +106,10 @@
                                     </li>
                                 </ul>
                             </div>
-                                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                                <div class="menu example5"><span></span></div>
-                                </button>
-                                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <button class="navbar-toggler dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <div class="menu example5"><span></span></div>
+                            </button>
+                            <div class="dropdown-menu">
                                     <ul class="navbar-nav  mb-2 mb-lg-0">
                                         <li class="nav-item">
                                             <i class="fa-solid fa-circle"></i>
@@ -167,97 +167,96 @@
     <!-- hero section -->
     <section class="hero_section">
         <div class="carousel_block owl-carousel mobile_none">
-            <div class="slider_item">
-                <img src="assets/img/slider_item.png" class="img-fluid" alt="">
+            <div class="slider_item" style="background-image: url(/assets/img/slider_item.png);">
             </div>
-            <div class="slider_item">
-                <img src="assets/img/slider_item.png" class="img-fluid" alt="">
+            <div class="slider_item" style="background-image: url(/assets/img/slider_item.png);">
             </div>
-            <div class="slider_item">
-                <img src="assets/img/slider_item.png" class="img-fluid" alt="">
+            <div class="slider_item" style="background-image: url(/assets/img/slider_item.png);">
             </div>
         </div>
 
         <!-- search form for hero section -->
-            <div class="search_block">
-                <h2>Search your Stock Now</h2>
-                <form action="">
-                    <div class="row">
-                        <div class="col-12">
-                            <label for="">Make</label>
-                            <select name="" id="" class="form-select">
-                                <option value="">Please Select</option>
-                                <option value="">Please Select</option>
-                                <option value="">Please Select</option>
-                                <option value="">Please Select</option>
-                            </select>
-                        </div>
-                        <div class="col-6">
-                            <label for="">Model</label>
-                            <input type="text" class="form-control">
-                        </div>
-                        <div class="col-6">
-                            <label for="">Model Code</label>
-                            <input type="text" class="form-control">
-                        </div>
-                         <div class="col-6">
-                            <label for="">Price (USD)</label>
-                            <input type="text" class="form-control">
-                        </div>
-                         <div class="col-6">
-                            <label for="">Year</label>
-                            <input type="text" class="form-control">
-                        </div>
-                         <div class="col-6">
-                            <label for="">Engine (CC)</label>
-                            <input type="text" class="form-control">
-                        </div>
-                         <div class="col-6">
-                            <label for="">Milage</label>
-                            <input type="text" class="form-control">
-                        </div>
-                         <div class="col-6">
-                           <label for="">Color</label>
-                            <div class="color-options">
-                                <div class="color-option">
-                                    <input type="radio" name="color" id="color1" />
-                                    <label for="color1" data-color="purple"></label>
-                                </div>
-                                <div class="color-option">
-                                    <input type="radio" name="color" id="color2" />
-                                    <label for="color2" data-color="teal"></label>
-                                </div>
-                                <div class="color-option">
-                                    <input type="radio" name="color" id="color3" />
-                                    <label for="color3" data-color="red"></label>
-                                </div>
-                                <div class="color-option">
-                                    <input type="radio" name="color" id="color4" />
-                                    <label for="color4" data-color="gray"></label>
-                                </div>
-                                <div class="color-option">
-                                    <input type="radio" name="color" id="color5" />
-                                    <label for="color5" data-color="light"></label>
-                                </div>
-                                <div class="color-option">
-                                    <input type="radio" name="color" id="color6" />
-                                    <label for="color6" data-color="black"></label>
-                                </div>
-                            </div>
-                            
-                        </div>
-                         <div class="col-6">
-                             <label for=""></label>
-                            <input type="submit" class="btn btn_submit">
-                        </div>
-
-                        <div class="col-12 total">
-                            <p>Total Cars In Stock: <span>467,774</span></p>
-                        </div>
+       
+        <div class="search_block">
+            <h2>Search your Stock Now</h2>
+            <form action="">
+                <div class="row">
+                    <div class="col-12">
+                        <label for="">Make</label>
+                        <select name="" id="" class="form-select">
+                            <option value="">Please Select</option>
+                            <option value="">Please Select</option>
+                            <option value="">Please Select</option>
+                            <option value="">Please Select</option>
+                        </select>
                     </div>
-                </form>
-              
-            </div>
+                    <div class="col-6">
+                        <label for="">Model</label>
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="col-6">
+                        <label for="">Model Code</label>
+                        <input type="text" class="form-control">
+                    </div>
+                        <div class="col-6">
+                        <label for="">Price (USD)</label>
+                        <input type="text" class="form-control">
+                    </div>
+                        <div class="col-6">
+                        <label for="">Year</label>
+                        <input type="text" class="form-control">
+                    </div>
+                        <div class="col-6">
+                        <label for="">Engine (CC)</label>
+                        <input type="text" class="form-control">
+                    </div>
+                        <div class="col-6">
+                        <label for="">Milage</label>
+                        <input type="text" class="form-control">
+                    </div>
+                        <div class="col-6">
+                        <label for="">Color</label>
+                        <div class="color-options">
+                            <div class="color-option">
+                                <input type="radio" name="color" id="color1" />
+                                <label for="color1" data-color="purple"></label>
+                            </div>
+                            <div class="color-option">
+                                <input type="radio" name="color" id="color2" />
+                                <label for="color2" data-color="teal"></label>
+                            </div>
+                            <div class="color-option">
+                                <input type="radio" name="color" id="color3" />
+                                <label for="color3" data-color="red"></label>
+                            </div>
+                            <div class="color-option">
+                                <input type="radio" name="color" id="color4" />
+                                <label for="color4" data-color="gray"></label>
+                            </div>
+                            <div class="color-option">
+                                <input type="radio" name="color" id="color5" />
+                                <label for="color5" data-color="light"></label>
+                            </div>
+                            <div class="color-option">
+                                <input type="radio" name="color" id="color6" />
+                                <label for="color6" data-color="black"></label>
+                            </div>
+                        </div>
+                        
+                    </div>
+                        <div class="col-6">
+                            <label for=""></label>
+                        <input type="submit" class="btn btn_submit">
+                    </div>
+
+                    <div class="col-12 total">
+                        <p>Total Cars In Stock: <span>467,774</span></p>
+                    </div>
+                </div>
+            </form>
+            
+        </div>
+           
         <!-- search form for hero section -->
            <div class="arrow">
                     <img src="assets/img/image-removebg-preview 1.png" class="img-fluid" alt="">
@@ -280,13 +279,13 @@
                         </form> 
                     </div>
                 </div>
-                <div class="col-md-2 col-6">
+                <div class="col-lg-2 col-md-3 col-6">
                     <button class="stock_button">
                         <img src="assets/img/car icon.png" class="img-fluid" alt="">
                         Search Stock
                     </button>
                 </div>
-                <div class="col-md-8 search_by_kw mobile_none">
+                <div class="col-lg-8 col-md-6 search_by_kw mobile_none">
                     <div class="key">
                         <p>By Keywords</p>
                     </div>
@@ -295,7 +294,7 @@
                         <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
                     </form>
                 </div>
-                  <div class="col-md-2 col-6">
+                  <div class="col-lg-2 col-md-3 col-6">
                     <button class="stock_button bid_cars">
                         <img src="assets/img/hammer.png" class="img-fluid" alt="">
                         <p>BID CARS
@@ -440,7 +439,7 @@
                       </div>
                    
                     <div class="cars_card row g-2">
-                         <div class="col-md-2 col-4">
+                         <div class="col-lg-2 col-md-3 col-4">
                             <div class="single_car_card">
                                 <a href="https://example.com"> <img src="assets/img/SUZUKICARRY TRUCK KU 3 WAY AWD 4WD.jpg" class="img-fluid" alt=""></a>
                                 <a href="https://example.com"><h3>TOYOTA <span>COROLLA</span></h3></a>
@@ -449,7 +448,7 @@
                                 <button>Price: USD 9,790</button>
                             </div>
                         </div>
-                         <div class="col-md-2 col-4">
+                         <div class="col-lg-2 col-md-3 col-4">
                             <div class="single_car_card">
                                 <a href="https://example.com"> <img src="assets/img/SUZUKICARRY TRUCK KU 3 WAY AWD 4WD.jpg" class="img-fluid" alt=""></a>
                                 <a href="https://example.com"><h3>TOYOTA <span>COROLLA</span></h3></a>
@@ -458,7 +457,7 @@
                                 <button>Price: USD 9,790</button>
                             </div>
                         </div>
-                         <div class="col-md-2 col-4">
+                         <div class="col-lg-2 col-md-3 col-4">
                             <div class="single_car_card">
                                 <a href="https://example.com"> <img src="assets/img/SUZUKICARRY TRUCK KU 3 WAY AWD 4WD.jpg" class="img-fluid" alt=""></a>
                                 <a href="https://example.com"><h3>TOYOTA <span>COROLLA</span></h3></a>
@@ -467,7 +466,7 @@
                                 <button>Price: USD 9,790</button>
                             </div>
                         </div>
-                         <div class="col-md-2 col-4">
+                         <div class="col-lg-2 col-md-3 col-4">
                             <div class="single_car_card">
                                 <a href="https://example.com"> <img src="assets/img/SUZUKICARRY TRUCK KU 3 WAY AWD 4WD.jpg" class="img-fluid" alt=""></a>
                                 <a href="https://example.com"><h3>TOYOTA <span>COROLLA</span></h3></a>
@@ -476,7 +475,7 @@
                                 <button>Price: USD 9,790</button>
                             </div>
                         </div>
-                         <div class="col-md-2 col-4">
+                         <div class="col-lg-2 col-md-3 col-4">
                             <div class="single_car_card">
                                 <a href="https://example.com"> <img src="assets/img/SUZUKICARRY TRUCK KU 3 WAY AWD 4WD.jpg" class="img-fluid" alt=""></a>
                                 <a href="https://example.com"><h3>TOYOTA <span>COROLLA</span></h3></a>
@@ -485,7 +484,7 @@
                                 <button>Price: USD 9,790</button>
                             </div>
                         </div>
-                         <div class="col-md-2 col-4">
+                         <div class="col-lg-2 col-md-3 col-4">
                             <div class="single_car_card">
                                 <a href="https://example.com"> <img src="assets/img/SUZUKICARRY TRUCK KU 3 WAY AWD 4WD.jpg" class="img-fluid" alt=""></a>
                                 <a href="https://example.com"><h3>TOYOTA <span>COROLLA</span></h3></a>
@@ -494,7 +493,7 @@
                                 <button>Price: USD 9,790</button>
                             </div>
                         </div>
-                         <div class="col-md-2 col-4">
+                         <div class="col-lg-2 col-md-3 col-4">
                             <div class="single_car_card">
                                 <a href="https://example.com"> <img src="assets/img/SUZUKICARRY TRUCK KU 3 WAY AWD 4WD.jpg" class="img-fluid" alt=""></a>
                                 <a href="https://example.com"><h3>TOYOTA <span>COROLLA</span></h3></a>
@@ -503,7 +502,7 @@
                                 <button>Price: USD 9,790</button>
                             </div>
                         </div>
-                         <div class="col-md-2 col-4">
+                         <div class="col-lg-2 col-md-3 col-4">
                             <div class="single_car_card">
                                 <a href="https://example.com"> <img src="assets/img/SUZUKICARRY TRUCK KU 3 WAY AWD 4WD.jpg" class="img-fluid" alt=""></a>
                                 <a href="https://example.com"><h3>TOYOTA <span>COROLLA</span></h3></a>
@@ -532,7 +531,7 @@
                     </div>
                   
                     <div class="cars_card row g-2">
-                         <div class="col-md-2 col-4">
+                         <div class="col-lg-2 col-md-3 col-4">
                             <div class="single_car_card">
                                 <a href="https://example.com"> <img src="assets/img/SUZUKICARRY TRUCK KU 3 WAY AWD 4WD.jpg" class="img-fluid" alt=""></a>
                                 <a href="https://example.com"><h3>TOYOTA <span>COROLLA</span></h3></a>
@@ -541,7 +540,7 @@
                                 <button>Price: USD 9,790</button>
                             </div>
                         </div>
-                         <div class="col-md-2 col-4">
+                         <div class="col-lg-2 col-md-3 col-4">
                             <div class="single_car_card">
                                 <a href="https://example.com"> <img src="assets/img/SUZUKICARRY TRUCK KU 3 WAY AWD 4WD.jpg" class="img-fluid" alt=""></a>
                                 <a href="https://example.com"><h3>TOYOTA <span>COROLLA</span></h3></a>
@@ -550,7 +549,7 @@
                                 <button>Price: USD 9,790</button>
                             </div>
                         </div>
-                         <div class="col-md-2 col-4">
+                         <div class="col-lg-2 col-md-3 col-4">
                             <div class="single_car_card">
                                 <a href="https://example.com"> <img src="assets/img/SUZUKICARRY TRUCK KU 3 WAY AWD 4WD.jpg" class="img-fluid" alt=""></a>
                                 <a href="https://example.com"><h3>TOYOTA <span>COROLLA</span></h3></a>
@@ -559,7 +558,7 @@
                                 <button>Price: USD 9,790</button>
                             </div>
                         </div>
-                         <div class="col-md-2 col-4">
+                         <div class="col-lg-2 col-md-3 col-4">
                             <div class="single_car_card">
                                 <a href="https://example.com"> <img src="assets/img/SUZUKICARRY TRUCK KU 3 WAY AWD 4WD.jpg" class="img-fluid" alt=""></a>
                                 <a href="https://example.com"><h3>TOYOTA <span>COROLLA</span></h3></a>
@@ -568,7 +567,7 @@
                                 <button>Price: USD 9,790</button>
                             </div>
                         </div>
-                         <div class="col-md-2 col-4">
+                         <div class="col-lg-2 col-md-3 col-4">
                             <div class="single_car_card">
                                 <a href="https://example.com"> <img src="assets/img/SUZUKICARRY TRUCK KU 3 WAY AWD 4WD.jpg" class="img-fluid" alt=""></a>
                                 <a href="https://example.com"><h3>TOYOTA <span>COROLLA</span></h3></a>
@@ -577,7 +576,7 @@
                                 <button>Price: USD 9,790</button>
                             </div>
                         </div>
-                         <div class="col-md-2 col-4">
+                         <div class="col-lg-2 col-md-3 col-4">
                             <div class="single_car_card">
                                 <a href="https://example.com"> <img src="assets/img/SUZUKICARRY TRUCK KU 3 WAY AWD 4WD.jpg" class="img-fluid" alt=""></a>
                                 <a href="https://example.com"><h3>TOYOTA <span>COROLLA</span></h3></a>
@@ -586,7 +585,7 @@
                                 <button>Price: USD 9,790</button>
                             </div>
                         </div>
-                         <div class="col-md-2 col-4">
+                         <div class="col-lg-2 col-md-3 col-4">
                             <div class="single_car_card">
                                 <a href="https://example.com"> <img src="assets/img/SUZUKICARRY TRUCK KU 3 WAY AWD 4WD.jpg" class="img-fluid" alt=""></a>
                                 <a href="https://example.com"><h3>TOYOTA <span>COROLLA</span></h3></a>
@@ -595,7 +594,7 @@
                                 <button>Price: USD 9,790</button>
                             </div>
                         </div>
-                         <div class="col-md-2 col-4">
+                         <div class="col-lg-2 col-md-3 col-4">
                             <div class="single_car_card">
                                 <a href="https://example.com"> <img src="assets/img/SUZUKICARRY TRUCK KU 3 WAY AWD 4WD.jpg" class="img-fluid" alt=""></a>
                                 <a href="https://example.com"><h3>TOYOTA <span>COROLLA</span></h3></a>
@@ -859,7 +858,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-md-4">
+                            <div class="col-lg-4 col-sm-6">
                                 <div class="post_items">
                                     <img src="assets/img/blog1.png" class="img-fluid w-100" alt="">
                                     <h3>
@@ -868,7 +867,7 @@
                                     <button>See More</button>
                                 </div>
                             </div>
-                                <div class="col-md-4">
+                            <div class="col-lg-4 col-sm-6">
                                 <div class="post_items">
                                     <img src="assets/img/blog2.png" class="img-fluid w-100" alt="">
                                     <h3>
@@ -877,7 +876,7 @@
                                     <button>See More</button>
                                 </div>
                             </div>
-                                <div class="col-md-4">
+                            <div class="col-lg-4 col-sm-6">
                                 <div class="post_items">
                                     <img src="assets/img/blog3.png" class="img-fluid w-100" alt="">
                                     <h3>
@@ -936,10 +935,10 @@
      <div class="signup_section">
         <div class="container">
             <div class="row justify-content-center align-items-center">
-                <div class="col-md-4">
+                <div class="col-lg-4 col-md-5">
                     <img src="assets/img/signup.png" class="img-fluid w-100" alt="">
                 </div>
-                <div class="col-md-4 col-12">
+                <div class="col-lg-4 col-md-7 col-12">
                     <label for="">Instant US$100 discount!</label>
                     <form action="">
                         <input type="email" class="form-control" placeholder="Your Email Address">
@@ -955,7 +954,7 @@
     <footer>
         <div class="container">
             <div class="row">
-                <div class="col-md-4 flex">
+                <div class="col-md-4 col-6  flex">
                     <div class="ii ">
                         <img src="assets/img/next-drive.png" class="img-fluid" alt="">
                       
@@ -980,7 +979,7 @@
                    </div>
                 </div>
 
-                <div class="col-md-3 mobile_hide quick_list">
+                <div class="col-md-3 col-6 quick_list">
                     <h5>About Next Drive:</h5>
                         <ul>
                             <li>
@@ -995,7 +994,7 @@
                         </ul>
                 </div>
 
-                <div class="col-md-3 mobile_hide quick_list">
+                <div class="col-md-3 col-6   quick_list">
                     <h5>How To Buy :</h5>
                         <ul>
                             <li>
@@ -1009,7 +1008,7 @@
                             </li>
                         </ul>
                 </div>
-                <div class="col-md-2 mobile_hide quick_list">
+                <div class="col-md-2 col-6  quick_list">
                     <h5>Terms &amp; Conditions:</h5>
                         <ul>
                             <li>
@@ -1024,7 +1023,7 @@
                         </ul>
                 </div>
 
-                <div class="col-md-3 mobile_hide offset-md-4 quick_list">
+                <div class="col-md-3 col-6  offset-md-4 quick_list">
                     <h5>Partnerships:</h5>
                         <ul>
                             <li>
@@ -1038,7 +1037,7 @@
                             </li>
                         </ul>
                 </div>
-                <div class="col-md-3 mobile_hide quick_list">
+                <div class="col-md-3 col-6  quick_list">
                     <h5>Useful Links:</h5>
                         <ul>
                             <li>
@@ -1052,7 +1051,7 @@
                             </li>
                         </ul>
                 </div>
-                <div class="col-md-2 mobile_hide social_icon">
+                <div class="col-md-2 col-6  social_icon">
                     <h5>SNS:</h5>
                     <ul class="">
                         <li>
@@ -1065,6 +1064,14 @@
                 </div>
 
             </div>
+        </div>
+
+        <div class="copyright">
+           <div class="container">
+            <div class="row">
+                <p>©Copyright 2025 Next Drive Co., Ltd All rights reserved</p>
+            </div>
+           </div>
         </div>
     </footer>
 
