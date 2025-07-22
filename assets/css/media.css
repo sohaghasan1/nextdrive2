@@ -112,6 +112,9 @@ margin-left: 0%;
     }
 }
 @media(max-width: 600px){
+    .cars_info_box ul{
+        flex-wrap: wrap;
+    }
     .modal-dialog{
         width: 90%;
         margin: 80px auto 50px;
