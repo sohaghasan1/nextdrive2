@@ -32,3 +32,139 @@ $(document).ready(function () {
     // undo stuff with menu here
   });
 });
+
+// filter 
+  // Handle toggle groups (like Arrival, Price, Year)
+  document.querySelectorAll(".toggle-group").forEach(group => {
+    const buttons = group.querySelectorAll(".btn");
+    buttons.forEach(btn => {
+      btn.addEventListener("click", () => {
+        buttons.forEach(b => b.classList.remove("btn-danger", "active"));
+        buttons.forEach(b => b.classList.add("btn-outline-secondary"));
+        btn.classList.remove("btn-outline-secondary");
+        btn.classList.add("btn-danger", "active");
+      });
+    });
+  });
+
+
+  // list - grid view js 
+
+  document.addEventListener("DOMContentLoaded", function () {
+      const toggleBtn = document.getElementById("toggleViewBtn");
+      const viewIcon = document.getElementById("viewIcon");
+
+      toggleBtn.addEventListener("click", function () {
+        if (viewIcon.classList.contains("fa-border-all")) {
+          viewIcon.classList.remove("fa-border-all");
+          viewIcon.classList.add("fa-table-list");
+        } else {
+          viewIcon.classList.remove("fa-table-list");
+          viewIcon.classList.add("fa-border-all");
+        }
+      });
+    });
+
+
+
+  document.addEventListener("DOMContentLoaded", function () {
+    const countrySelect = document.getElementById("country");
+    const countryBoxes = document.querySelectorAll(".country-info");
+
+    countrySelect.addEventListener("change", function () {
+      const selected = this.value;
+
+      countryBoxes.forEach(box => {
+        if (box.getAttribute("data-country") === selected) {
+          box.classList.remove("d-none");
+        } else {
+          box.classList.add("d-none");
+        }
+      });
+    });
+  });
+
+
+  // sorting button 
+document.addEventListener("DOMContentLoaded", function () {
+    const ascIcon = document.getElementById("ascIcon");
+    const descIcon = document.getElementById("descIcon");
+
+    let sortState = "none"; // "asc", "desc", "none"
+
+    document.getElementById("sortToggle").addEventListener("click", function () {
+      if (sortState === "none" || sortState === "desc") {
+        sortState = "asc";
+        ascIcon.classList.add("active");
+        descIcon.classList.remove("active");
+      } else {
+        sortState = "desc";
+        ascIcon.classList.remove("active");
+        descIcon.classList.add("active");
+      }
+
+      // Optional: You can use sortState to handle real sorting later
+      console.log("Current sort:", sortState);
+    });
+  });
+
+// mobile search filter 
+document.addEventListener("DOMContentLoaded", function () {
+    const toggleBtn = document.getElementById("search-form-filter");
+    const search_form_section = document.getElementById("search_form_section");
+
+    toggleBtn.addEventListener("click", function () {
+      const isHidden = search_form_section.classList.contains("d-none");
+
+      if (isHidden) {
+        search_form_section.classList.remove("d-none");
+      } else {
+        search_form_section.classList.add("d-none");
+      }
+    });
+  });
+
+  // filter buttons 
+  document.addEventListener("DOMContentLoaded", function () {
+    const toggleBtn = document.getElementById("sort_button");
+    const sorting_section = document.getElementById("sorting_section");
+
+    toggleBtn.addEventListener("click", function () {
+      const isHidden = sorting_section.classList.contains("d-none");
+
+      if (isHidden) {
+        sorting_section.classList.remove("d-none");
+      } else {
+        sorting_section.classList.add("d-none");
+      }
+    });
+  });
+// seacrh by car filter 
+    document.addEventListener("DOMContentLoaded", function () {
+    const toggleBtn = document.getElementById("search_car");
+    const search_by_car_card = document.getElementById("search_by_car_card");
+
+    toggleBtn.addEventListener("click", function () {
+      const isHidden = search_by_car_card.classList.contains("d-none");
+
+      if (isHidden) {
+        search_by_car_card.classList.remove("d-none");
+      } else {
+        search_by_car_card.classList.add("d-none");
+      }
+    });
+  });
+
+  // pagination active class 
+
+  document.addEventListener("DOMContentLoaded", function () {
+    const paginationLinks = document.querySelectorAll(".search_page_pagination a");
+
+    paginationLinks.forEach(link => {
+      link.addEventListener("click", function (e) {
+        e.preventDefault(); 
+        paginationLinks.forEach(l => l.classList.remove("active"));
+        this.classList.add("active");
+      });
+    });
+  });
