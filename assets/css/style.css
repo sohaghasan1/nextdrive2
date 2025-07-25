@@ -164,7 +164,7 @@ header .nav-link:hover::after {
 .search_block {
     background-color: rgb(255, 240, 240);
     padding: 20px 28px;
-    max-width: 380px;
+    max-width: 400px;
     position: absolute;
     left: 100px;
     top: 50%;
@@ -180,6 +180,7 @@ header .nav-link:hover::after {
     color: rgb(203, 10, 7);
     text-align: center;
     margin-bottom: 16px;
+    margin-top: 20px;
 }
 
 .search_block form input, .search_block form select {
@@ -1350,17 +1351,21 @@ display: flex;
     display: none;
 }
 
-  .toggle-section {
-    max-height: 0;
-    opacity: 0;
-    overflow: hidden;
-    transition: all 0.4s ease;
-    transform: scaleY(0.95);
-    transform-origin: top;
-  }
 
-  .toggle-section.active {
-    max-height: 1500px;
-    opacity: 1;
-    transform: scaleY(1);
-  }
+.disabled-section {
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+.search_block.search-form{
+    padding: 0;
+    border: 1px solid #B8B8B8;
+    border-radius: 4px;
+
+}
+
+.search_block.search-form form{
+    border: none;
+    margin-top: 0;
+    padding: 10px 24px 35px;
+}
