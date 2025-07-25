@@ -68,7 +68,7 @@ margin-left: 0%;
     font-size: 12px;
 }
 .search-form input{
-    padding: 3px;
+    padding: 8px;
 }
 .btn-submit{
     font-size: 14px;
@@ -112,6 +112,16 @@ margin-left: 0%;
     }
 }
 @media(max-width: 600px){
+    .search-form .color-options {
+        padding: 11px 10px 4px;
+    }
+    .search-form .color-options label {
+        width: 17px;
+        height: 17px;
+    }
+    .dbl_select{
+        width: 70% !important;
+    }
     .cars_info_box ul{
         flex-wrap: wrap;
     }

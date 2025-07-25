@@ -109,51 +109,51 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
 // mobile search filter 
-document.addEventListener("DOMContentLoaded", function () {
-    const toggleBtn = document.getElementById("search-form-filter");
-    const search_form_section = document.getElementById("search_form_section");
+// document.addEventListener("DOMContentLoaded", function () {
+//     const toggleBtn = document.getElementById("search-form-filter");
+//     const search_form_section = document.getElementById("search_form_section");
 
-    toggleBtn.addEventListener("click", function () {
-      const isHidden = search_form_section.classList.contains("d-none");
+//     toggleBtn.addEventListener("click", function () {
+//       const isHidden = search_form_section.classList.contains("d-none");
 
-      if (isHidden) {
-        search_form_section.classList.remove("d-none");
-      } else {
-        search_form_section.classList.add("d-none");
-      }
-    });
-  });
+//       if (isHidden) {
+//         search_form_section.classList.remove("d-none");
+//       } else {
+//         search_form_section.classList.add("d-none");
+//       }
+//     });
+//   });
 
   // filter buttons 
-  document.addEventListener("DOMContentLoaded", function () {
-    const toggleBtn = document.getElementById("sort_button");
-    const sorting_section = document.getElementById("sorting_section");
+  // document.addEventListener("DOMContentLoaded", function () {
+  //   const toggleBtn = document.getElementById("sort_button");
+  //   const sorting_section = document.getElementById("sorting_section");
 
-    toggleBtn.addEventListener("click", function () {
-      const isHidden = sorting_section.classList.contains("d-none");
+  //   toggleBtn.addEventListener("click", function () {
+  //     const isHidden = sorting_section.classList.contains("d-none");
 
-      if (isHidden) {
-        sorting_section.classList.remove("d-none");
-      } else {
-        sorting_section.classList.add("d-none");
-      }
-    });
-  });
+  //     if (isHidden) {
+  //       sorting_section.classList.remove("d-none");
+  //     } else {
+  //       sorting_section.classList.add("d-none");
+  //     }
+  //   });
+  // });
 // seacrh by car filter 
-    document.addEventListener("DOMContentLoaded", function () {
-    const toggleBtn = document.getElementById("search_car");
-    const search_by_car_card = document.getElementById("search_by_car_card");
+  //   document.addEventListener("DOMContentLoaded", function () {
+  //   const toggleBtn = document.getElementById("search_car");
+  //   const search_by_car_card = document.getElementById("search_by_car_card");
 
-    toggleBtn.addEventListener("click", function () {
-      const isHidden = search_by_car_card.classList.contains("d-none");
+  //   toggleBtn.addEventListener("click", function () {
+  //     const isHidden = search_by_car_card.classList.contains("d-none");
 
-      if (isHidden) {
-        search_by_car_card.classList.remove("d-none");
-      } else {
-        search_by_car_card.classList.add("d-none");
-      }
-    });
-  });
+  //     if (isHidden) {
+  //       search_by_car_card.classList.remove("d-none");
+  //     } else {
+  //       search_by_car_card.classList.add("d-none");
+  //     }
+  //   });
+  // });
 
   // pagination active class 
 
@@ -168,3 +168,62 @@ document.addEventListener("DOMContentLoaded", function () {
       });
     });
   });
+
+
+  // select optios 
+
+   $(document).ready(function() {
+    $('.select2').select2({
+      allowClear: true
+    });
+  });
+
+
+  // filter toggle 
+
+document.addEventListener("DOMContentLoaded", function () {
+  const sectionMap = {
+    "search-form-filter": "search_form_section",
+    "sort_button": "sorting_section",
+    "search_car": "search_by_car_card"
+  };
+
+  let currentVisible = null;
+
+  Object.keys(sectionMap).forEach(buttonId => {
+    const button = document.getElementById(buttonId);
+    const sectionId = sectionMap[buttonId];
+    const section = document.getElementById(sectionId);
+    const wrapper = document.getElementById("wrap_" + sectionId);
+
+    button.addEventListener("click", () => {
+      // Close current section if it's not the same one
+      if (currentVisible && currentVisible !== section) {
+        const currentWrapper = document.getElementById("wrap_" + currentVisible.id);
+        currentVisible.classList.remove("active");
+        setTimeout(() => {
+          currentVisible.classList.add("d-none");
+          currentWrapper.classList.add("d-none");
+        }, 400);
+      }
+
+      const isVisible = section.classList.contains("active");
+
+      if (isVisible) {
+        section.classList.remove("active");
+        setTimeout(() => {
+          section.classList.add("d-none");
+          wrapper.classList.add("d-none");
+        }, 400);
+        currentVisible = null;
+      } else {
+        wrapper.classList.remove("d-none");
+        section.classList.remove("d-none");
+        setTimeout(() => {
+          section.classList.add("active");
+        }, 10);
+        currentVisible = section;
+      }
+    });
+  });
+});

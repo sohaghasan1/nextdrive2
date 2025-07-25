@@ -978,7 +978,7 @@ button.navbar-toggler:focus {
 .btn-submit {
     background-color: rgb(203, 10, 7);
     color: rgb(255, 255, 255);
-    padding: 6px 0px;
+    padding: 8px 0px;
     margin-top: 4px;
 }
 
@@ -1291,3 +1291,76 @@ display: flex;
 .filter_button_mobile{
     display: none;
 }
+
+
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+    top: 7px !important;
+}
+
+.search-form .select2 .select2-selection {
+    border: 1px solid #BEBEBE !important;
+    border-radius: 5px;
+    padding: 5px 10px 10px;
+    height: 40px;
+}
+
+.search-form .select2-container--default{
+    color: rgb(68, 68, 68);
+    line-height: 28px;
+    font-size: 14px;
+}
+.select2-results__option--selectable {
+    cursor: pointer;
+    font-size: 14px;
+}
+.select2-search--dropdown .select2-search__field:focus{
+    outline: none;
+}
+
+.search-form a:hover{
+    background-color: #CB0A07;
+    color: #fff;
+}
+.search-form a:hover i{
+    color: #fff;
+}
+
+/* toggle css  */
+.toggle-section {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: all 0.4s ease;
+  transform: scaleY(0.95);
+  transform-origin: top;
+}
+
+/* When shown */
+.toggle-section.active {
+  max-height: 1500px; /* enough to hold full height */
+  opacity: 1;
+  transform: scaleY(1);
+}
+
+.select2-container{
+    width: 100% !important;
+}
+
+.select2-selection__clear{
+    display: none;
+}
+
+  .toggle-section {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: all 0.4s ease;
+    transform: scaleY(0.95);
+    transform-origin: top;
+  }
+
+  .toggle-section.active {
+    max-height: 1500px;
+    opacity: 1;
+    transform: scaleY(1);
+  }
