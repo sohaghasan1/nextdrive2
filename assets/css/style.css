@@ -1051,13 +1051,14 @@ button.navbar-toggler:focus {
     align-items: unset;
 }
 
-.cars_info_box h3 span:first-child {
+.cars_info_box h3 {
     font-size: 22px;
     font-weight: 600;
-    color: rgb(0, 0, 0);
     margin-bottom: 6px;
 }
-
+.cars_info_box h3 span:first-child {
+    color: rgb(0, 0, 0);
+}
 .cars_info_box h3 span:last-child {
     color: rgb(203, 10, 7);
 }
