@@ -162,7 +162,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
     paginationLinks.forEach(link => {
       link.addEventListener("click", function (e) {
-        e.preventDefault(); 
         paginationLinks.forEach(l => l.classList.remove("active"));
         this.classList.add("active");
       });
