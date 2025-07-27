@@ -1282,21 +1282,21 @@ display: flex;
     line-height: 100%;
     margin-top: 10px;
 }
-#sortToggle i {
+.sortToggle i {
     transition: color 0.3s;
 }
-#sortToggle i.active {
+.sortToggle i.active {
     color: #CB0A07 !important;
 }
-#sortToggle {
+.sortToggle {
     line-height: 1;
     font-weight: bold;
     font-family: sans-serif;
 }
-#sortToggle:hover{
+.sortToggle:hover{
     background-color: #fff;
 }
-#sortToggle:hover div{
+.sortToggle:hover div{
     color: #454545;
 }
 .header_desktop_none{
