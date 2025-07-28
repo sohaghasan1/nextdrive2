@@ -1350,22 +1350,203 @@ display: flex;
 .select2-selection__clear{
     display: none;
 }
-
-
 .disabled-section {
   pointer-events: none;
   opacity: 0.5;
 }
-
 .search_block.search-form{
     padding: 0;
     border: 1px solid #B8B8B8;
     border-radius: 4px;
-
 }
-
 .search_block.search-form form{
     border: none;
     margin-top: 0;
     padding: 10px 24px 35px;
+}
+
+/* single car page css  */
+
+.car-details-title {
+    font-size: 24px;
+    margin-bottom: 0;
+}
+
+.dark-ash {
+    color: #292826 !important;
+}
+.showONMobile {
+     position: fixed;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: all 0.4s ease-in-out 0s;
+}
+.showONDesktop {
+    position: fixed;
+    top: 50%;
+    right: 50px;
+    transform: translateY(-50%);
+    opacity: 1;
+    transition: all 0.4s ease-in-out 0s;
+    z-index: 99999 !important;
+}
+.line {
+    height: 4px;
+    background-color: #FF001A;
+    margin-top: -1px;
+}
+.tags.bg-danger.text-dark.details.d-inline-block.text-danger {
+    background: #FCE5E5 !important;
+    font-size: 18px;
+    border-radius: 7px;
+    padding: 1px 5px;
+}
+.text-danger {
+    color: #CB0A07 !important;
+}
+
+.light-ash {
+    color: #8E8A83 !important;
+}
+.pink {
+    color: #FF001A !important;
+}
+.car-img-design {
+    padding: 0;
+}
+.card-img, .card-img-top {
+    border-top-left-radius: calc(.25rem - 1px);
+    border-top-right-radius: calc(.25rem - 1px);
+}
+.row.crbtns {
+    height: initial !important;
+}
+.btn {
+    outline: unset !important;
+    box-shadow: unset !important;
+}
+.carBtn.active, .carBtn:hover {
+    border: 2px solid #FF001A;
+}
+.car-details-pakage {
+    font-size: 22px;
+}
+.dark-red {
+    color: #CB0A07 !important;
+}
+.flx {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.cornder-cropped {
+    clip-path: polygon(15% 0, 100% 0, 100% 100%, 0 100%, 0 40%);
+    overflow: hidden;
+    max-height: 35px;
+}
+.fold {
+    height: 15px;
+    width: 15px;
+    background-color: #CB0A07;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 10;
+}
+.table-responsive {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+.table-border {
+    border: 2px solid #D6D6D6 !important;
+}
+.detTable td:nth-child(2n) {
+    font-weight: bold;
+}
+.height-space3 {
+    margin-top: 20px !important;
+}
+.spec-tb-border {
+    border-radius: 3px !important;
+}
+.spec-tb:hover {
+    transition: .2s all ease-in-out;
+    opacity: 1;
+}
+.spec-tb {
+    border: 2px solid #D6D6D6 !important;
+    background-color: #F8F8F8 !important;
+    color: #666 !important;
+    border-radius: 3px !important;
+    opacity: .5;
+    width: 30% !important;
+    font-size: 14px;
+    margin: 3px;
+}
+.sticky-buttons {
+    display: none;
+}
+.car-details-sticky-btn {
+    background-color: #fff;
+    opacity: 95%;
+}
+.top-margin {
+    margin-top: 30px !important;
+}
+.br-20 {
+    border-radius: 20px !important;
+}
+.card {
+    overflow: hidden !important;
+}
+.round-border {
+    border-top-left-radius: 15px !important;
+    border-top-right-radius: 15px !important;
+    border-end-start-radius: 7px !important;
+    border-end-end-radius: 7px !important;
+}
+.get-qoute {
+    font-size: 20px !important;
+    font-weight: 600 !important;
+}
+.inp label {
+    width: 100%;
+}
+ /* #getQuote label{
+    border: none;
+    display: inline-block;
+    margin-right: -4px;
+    vertical-align: top;
+    width: 30%;
+}  */
+.checkbox {
+    align-items: center;
+}
+.checkbox label{
+    margin-left: 10px;
+}
+.ask-for-price-btn {
+    background: linear-gradient(to right, #fc061c 1%, #f31824 49%, #ed2229 51%, #ce0d0b 100%);
+    padding: 0px 30px !important;
+    border-radius: 5px;
+    font-size: 16px;
+    box-shadow: 5px 5px 5px #000000cf !important;
+}
+#wa_img #wpClose {
+    position: absolute;
+    right: -6px;
+    top: 18px;
+    background: rgb(255, 255, 255);
+    padding: 0px 8px;
+    color: black;
+    border-radius: 10%;
+    border: 2px solid lightgray;
+    z-index: 999999;
+}
+.showONDesktop{
+    display: block;
 }

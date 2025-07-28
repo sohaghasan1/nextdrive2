@@ -11,7 +11,7 @@
 }
 @media(max-width: 991px){
 .sidebar_title{
-    font-size: 13px;
+    font-size: 14px;
 }
 .sidebar_title img {
     margin-right: 10px;
@@ -83,7 +83,7 @@ margin-left: 0%;
     width: 20px;
 }
 .brand_list ul li a{
-    font-size: 12px;
+    font-size: 14px;
 }
 .search-form .color-options {
     padding: 4px 10px 2px;
@@ -105,11 +105,44 @@ margin-left: 0%;
 #sortToggle{
     font-size: 10px;
 }
+.col-lg-2.col-md-4.col-6.p-1 {
+     flex: 0 0 20%;
+}
+.ask-btn {
+    position: static;
+    transform: translate(0px, 0px);
+    width: 200px;
+    margin: auto;
+}
+.showONDesktop {
+    display: block;
+    bottom: 100px;
+    opacity: 1;
+}
+.download-btn{
+    text-align: center !important;
+}
+
+.sticky-buttons {
+    display: block;
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-52%);
+    z-index: 100;
+}
+
+.showONDesktop{
+    display: none;
+}
+
 }
 @media(max-width: 890px){
     .slider_item{
         min-height: 60vh;
     }
+
+
 }
 @media(max-width: 600px){
     .search-form .color-options {
