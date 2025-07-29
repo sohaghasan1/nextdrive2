@@ -135,16 +135,101 @@ margin-left: 0%;
 .showONDesktop{
     display: none;
 }
-
+.filter_button_mobile.about_page{
+    display: block;
 }
+.about_page .brand_list ul {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+}
+.about_page .brand_list ul li {
+        width: 15%;
+        margin-left: 0;
+        margin-bottom: 5px;
+        margin: 1px;
+    }
+    .about_page .brand_list ul li a {
+        display: block;
+        text-align: center !important;
+        font-size: 12px;
+        border: 1px solid rgba(217, 217, 217, 1);
+        border-radius: 4px;
+        background: #F3F3F3;
+        padding: 10px 0px;
+        margin: 4px;
+        width: 100%;
+    }
+   .about_page .brand_list ul li a .brand_logo {
+        margin: auto;
+        margin-bottom: 5px;
+    }
+
+.about_page #wrap_search_by_car_card{
+    display: block;
+}
+}
+
+
 @media(max-width: 890px){
     .slider_item{
         min-height: 60vh;
     }
-
-
 }
 @media(max-width: 600px){
+    .about_page .brand_list ul li {
+        width: 23%;
+        margin-left: 0;
+        margin-bottom: 5px;
+        margin: 1px;
+    }
+    .person_details{
+        height: fit-content;
+    }
+
+    .slogan h2{
+        width: 100%;
+        font-size: 40px;
+        line-height: 130%;
+        padding: 0;
+    }
+.memorable_gallery h2 {
+    font-size: 40px;
+}
+.contact_row h6 {
+    font-size: 40px;
+}
+    .slogan h3 {
+    font-size: 24px;
+    line-height: 130%;
+}
+.slogan_block p {
+    font-size: 20px;
+}
+.banking_details h2 {
+    font-size: 40px;
+    color: #db2d2e;
+    margin-bottom: 20px;
+}
+    .about-details h2 {
+    font-size: 32px;
+    line-height: 150%;
+    margin: 20px 0;
+}
+.about-details h3{
+    margin-top: 15px;
+}
+.why_choose h2 {
+    font-size: 40px;
+   line-height: 130%;
+}
+.padd{
+    padding: 0;
+}
+.team h2{
+    font-size: 40px;
+    line-height: 130%;
+}
     .search-form .color-options {
         padding: 11px 10px 4px;
     }
