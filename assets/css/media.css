@@ -10,6 +10,19 @@
     }
 }
 @media(max-width: 991px){
+.single_person img {
+    height: 200px;
+}
+.person_details p {
+    margin-bottom: 6px;
+    font-size: 14px;
+}
+.person_details {
+    height: 200px;
+}
+.slogan h3 {
+    font-size: 40px;
+}
 .sidebar_title{
     font-size: 14px;
 }
@@ -168,6 +181,38 @@ margin-left: 0%;
 .about_page #wrap_search_by_car_card{
     display: block;
 }
+    .steps-btn .btn-steps .steps-text {
+        border-radius: 2px;
+    }
+    .menu-img-1{
+        position: relative;
+    }
+    .menu-img-2 {
+        position: relative;
+    }
+    .show-mobile {
+        display: block;
+    }
+    .buy-search-menu-stock-btn {
+        position: absolute;
+        top: 50%;
+        left: 32%;
+        padding: 3px 0px;
+        border: 2px solid #E7E7E7;
+    }
+        .buy-search-menu-stock-btn h4 {
+        margin-bottom: 0;
+        font-size: 6px;
+        padding: 0 2px;
+        font-weight: 700;
+    }
+    .menu-img-3 {
+        width: 55%;
+        margin: auto;
+    }
+    .steps-btn .btn-steps {
+        padding: 8px 15px 2px 25px;
+    }
 }
 
 
@@ -177,7 +222,39 @@ margin-left: 0%;
     }
 }
 @media(max-width: 600px){
-    .about_page .brand_list ul li {
+    .inner-intro {
+    height: 250px;
+    display: block;
+}
+.controls {
+    margin: 20px 0;
+}
+.intro-title{
+     height: 250px;
+}
+    .controls button {
+    font-size: 14px;
+}
+    .steps-btn .btn-steps .steps-title {
+        font-size: 25px;
+        line-height: 18px;
+    }
+    .btn-steps.col-6 {
+        flex: 0 0 auto;
+        width: 50% !important;
+    }
+    .steps-btn .btn-steps .steps-title {
+        font-size: 31px;
+        padding-top: 3px;
+    }
+    .how-to-buy {
+        font-size: 50px;
+        margin-bottom: 25px;
+    }
+    .steps-btn .btn-steps {
+        height: 235px;
+    }
+ .about_page .brand_list ul li {
         width: 23%;
         margin-left: 0;
         margin-bottom: 5px;

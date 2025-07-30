@@ -4,12 +4,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Next Drive</title>
-   <!-- fonts  -->
+    <!-- fonts  -->
      <link rel="stylesheet" href="assets/fonts/stylesheet.css">
      <link rel="stylesheet" href="assets/fonts/signpainter/stylesheet.css">
 
      <!-- jquery ui css -->
     <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+  
      <!-- bootstrap css  -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- owl carousel css  -->
@@ -167,7 +168,15 @@
         </div>
     </header>
     <!-- header section  -->
-
+    <section class="inner-intro bg-1 bg-overlay-black-70">
+        <div class="container">
+            <div class="row text-center intro-title">
+                <div class="col-md-6 text-center d-inline-block">
+                    <h1 class="text-white text-uppercase" style="font-family: Roboto,sans-serif!important;">blog next drive </h1>
+                </div>
+            </div>
+        </div>
+    </section>
     <!-- main content section  -->
 
     <section class="main_content">
@@ -418,7 +427,7 @@
 
                 </div>
                 
-                <!-- about details  -->
+                <!-- Blog Details  -->
                 <div class="col-md-12 col-lg-8">
                     <!-- filter buttons for mobile device  -->
                     <div class="filter_button_mobile about_page">
@@ -441,7 +450,6 @@
                         </div>
                     </div>
                     
-
                     <!-- mobile  toggle button results  -->
                     <div  class="row about_page">
                         <div id="wrap_search_by_car_card" class="col-12 d-none">
@@ -560,499 +568,69 @@
                         </div>
                     </div>
 
-                    <!-- about details row  -->
-                    <div class="row about-details">
-                        <div class="col-12">
-                            <h2>Welcome to NEXT DRIVE CO., LTD</h2>
+                    <!-- Blog section -->
+
+                    
+                   <div class="row">
+                    <div class="col-12">
+                        <div class="controls">
+                            <button type="button active" class="filter" data-filter="all">All</button>
+                            <button type="button" class="filter" data-filter=".general">General</button>
+                            <button type="button" class="filter" data-filter=".carstory">Car Story</button>
                         </div>
-                        <div class="col-sm-6">
-                            <div class="about_img">
-                                <img src="https://0fab917d.nextdrive-assets.pages.dev/next_drive/refactor/img/about us.png" class="img-fluid" alt="">
+
+                        <div class="row gy-3" id="blog_post">
+                            <div class="col-md-4 mix general">
+                                <div class="blog_card">
+                                    <img src="assets/img/blog-image.png" class="img-fluid" alt="">
+                                    <h2> <a href="">Top 5 Affordable Good Second Hand Cars Australia You Can’t Miss</a></h2>
+                                    <span>15 Jul 2025</span>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-sm-6">
-                            <h3>About Us</h3>
-                            <p>At NEXT DRIVE CO., LTD, we specialize in exporting high-quality Japanese used cars worldwide, operating from Shizuoka Prefecture, Japan. Our mission is to make owning a Japanese vehicle both affordable and hassle-free, providing unmatched convenience and exceptional service.</p>
-
-                            <p>Our Mission <br> At Next Drive Co., Ltd, our mission is to provide an unparalleled customer experience through fast, reliable shipment of top-quality vehicles. We are dedicated to delivering the highest standards of automotive excellence, ensuring each car meets rigorous quality benchmarks. By offering personalized service tailored to the unique needs of our clients, we aim to make every purchase seamless, efficient, and enjoyable. We strive to exceed expectations with our commitment to speed, quality, and customer-centric solutions.</p>
-
-                            <p>Our Vision <br> To revolutionize the way customers access their dream cars from Japan, providing smooth and efficient service while building lasting global connections.</p>
-
-                            <h4> Why we stand for </h4>
-                            <p>Customer Satisfaction: The cornerstone of our success is our dedication to ensuring customer satisfaction and fostering long-term relationships.o ensuring customer satisfaction and fostering long-term relationships.</p>
-
-                            <p>Global Reach: We export over hundreds vehicles globally each month, combining scale with personalized care for every customer. With local support in several countries.</p>
-
-                            <p>Market Expertise: With well-researched market data, we handle challenges effectively to provide the best options for our customers.</p>
-
-                            <p>Our Services Vehicle Exportation: We cater to both individual buyers and car importers, ensuring smooth delivery directly to your country.</p>
-
-                            <p>Exceptional Customer Support: Enjoy direct support from Japan, ensuring a seamless buying experience, free from unnecessary showroom hassle.</p>
-
-                            <p>Multilingual Assistance: Our international business model ensures effective communication with customers worldwide, providing 24/7 support to meet your needs.</p>
-
-                            <p>Commitment: We are large enough to honor every promise yet small enough to address every individual query with care.</p>
-
-                            <p>Transparency: Avoid overpaying for vehicles; with us, you only pay what the car is worth. Convenience: Our online auction and direct delivery services eliminate traditional barriers, offering convenience at every step.</p>
-
-                            <p>At NEXT DRIVE CO., LTD, we are driven by innovation, challenges, and a commitment to excellence. Join us in transforming how you acquire your dream car from Japan.</p>
-                        </div>
-                        <div class="col-md-8 m-auto">
-                            <div class="bar_line">
-
+                            <div class="col-md-4 mix carstory">
+                                <div class="blog_card">
+                                    <img src="assets/img/blog-image.png" class="img-fluid" alt="">
+                                     <h2> <a href="">Top 5 Affordable Good Second Hand Cars Australia You Can’t Miss</a></h2>
+                                    <span>15 Jul 2025</span>
+                                </div>
                             </div>
+                            <div class="col-md-4 mix carstory">
+                                <div class="blog_card">
+                                    <img src="assets/img/blog-image.png" class="img-fluid" alt="">
+                                     <h2> <a href="">Top 5 Affordable Good Second Hand Cars Australia You Can’t Miss</a></h2>
+                                    <span>15 Jul 2025</span>
+                                </div>
+                            </div>
+
+
+
+                            <!-- paginations  -->
+                            <div class="search_page_pagination">
+                                <ul>
+                                    <li>
+                                        <a href="" class="active">1</a>
+                                    </li>
+                                     <li>
+                                        <a href="">2</a>
+                                    </li>
+                                     <li>
+                                        <a href="">3</a>
+                                    </li>
+                                     <li>
+                                        <a href="">4</a>
+                                    </li>
+                                     <li>
+                                        <a href="">5</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        <!-- paginations  -->
                         </div>
                     </div>
-                        <!-- ceo row  -->
-                    <div class="row ceo_row team">
-                        <h2>Our Team</h2>
-                        <div class="row ">
-                            <div class="col-sm-10 m-auto">
-                                <div class="row">
-                                    <div class="col-sm-6 padd">
-                                        <img src="assets/img/ceo.webp" class="img-fluid" alt="">
-                                        
-                                    </div>
-                                    <div class="col-sm-6 ceo">
-                                        <h3>CEO, Next-drive</h3>
-                                        <p>Welcome to the NEXT-DRIVE website! However, none of this would be possible without the unwavering support of our customers, partners, and employees. It is their passion, dedication, and belief in our mission that fuels our progress and inspires us to push boundaries. Together, we are creating a movement towards a great future. CEO, NEXT-DRIVE</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                     <!-- admin row  -->
-                     <div class="row team">
-                        <h2>Admin Panel</h2>
-                            <div class="col-sm-6">
-                                <div class="row single_person gy-3">
-                                    <div class="col-sm-6">
-                                        <div class="mising_image">
-                                            <img src="https://www.next-drive.co.jp/storage/1th8X9HENXwpOAbfmytHlvvCbg4P98YwG0zvTA8U.jpg" alt="" class="img-fluid">
-                                          </div>
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <div class="person_details">
-                                            <p>AKIKO MATSUSHITA </p>
-                                            <p>DIRECTOR , ADMIN& ACCOUNTING </p>
-                                            <p>Hobby : <br> Message to Customer:</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="row single_person">
-                                    <div class="col-sm-6">
-                                        <img src="assets/img/annasha.webp" class="img-fluid" alt="">
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <div class="person_details">
-                                            <p>ANNASHA BHATTACHARJEE</p>
-                                            <p>GLOBAL LIAiSON OFFICER </p>
-                                            <p>Hobby : <br> Message to Customer:</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                     </div>
-
-                      <!-- PURCHASE & TRANSPORT PANEL row  -->
-                      <div class="row team">
-                        <h2>PURCHASE & TRANSPORT PANEL</h2>
-                            <div class="col-sm-6">
-                                <div class="row single_person">
-                                    <div class="col-sm-6">
-                                      <div class="mising_image">
-                                        <p>Kimverly Garcia</p>
-                                      </div>
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <div class="person_details">
-                                            <p>Kimverly Garcia</p>
-                                            <p>Hobby : <br> Message to Customer:</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="row single_person">
-                                    <div class="col-sm-6">
-                                        <img src="assets/img/shivayama.png" class="img-fluid" alt="">
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <div class="person_details">
-                                            <p>Kazuya Shibayama </p>
-                                            <p>Message </p>
-                                            <p>Hobby : <br> Message to Customer:</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                     </div>
-
-                    <!-- PURCHASE & TRANSPORT PANEL row  -->
-                    <div class="row team gy-3">
-                        <h2>SALES TEAM </h2>
-                            <div class="col-sm-6">
-                                <div class="row single_person">
-                                    <div class="col-sm-6">
-                                        <img src="assets/img/noor e alam.webp" class="img-fluid" alt="">
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <div class="person_details">
-                                            <p>NOOR E ALAM </p>
-                                            <p>Hobby : <br> Message to Customer:</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="row single_person">
-                                    <div class="col-sm-6">
-                                        <img src="assets/img/haisham tushar.webp" class="img-fluid" alt="">
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <div class="person_details">
-                                            <p>Haisam tushar </p>
-                                            <p>Message </p>
-                                            <p>Hobby : <br> Message to Customer:</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-sm-6">
-                                <div class="row single_person">
-                                    <div class="col-sm-6">
-                                        <img src="assets/img/ehsan ahmed.webp" class="img-fluid" alt="">
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <div class="person_details">
-                                            <p>Ehsan Ahmed</p>
-                                            <p>Hobby : <br> Message to Customer:</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="row single_person">
-                                    <div class="col-sm-6">
-                                        <img src="assets/img/riaz uddin.webp" class="img-fluid" alt="">
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <div class="person_details">
-                                            <p>riyaz uddin</p>
-                                            <p>Message </p>
-                                            <p>Hobby : <br> Message to Customer:</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-sm-6">
-                                <div class="row single_person">
-                                    <div class="col-sm-6">
-                                        <img src="assets/img/sujon.webp" class="img-fluid" alt="">
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <div class="person_details">
-                                            <p>Sujon Kumar Das </p>
-                                            <p>Hobby : <br> Message to Customer:</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="row single_person">
-                                    <div class="col-sm-6">
-                                        <img src="assets/img/lima.webp" class="img-fluid" alt="">
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <div class="person_details">
-                                            <p>Lima akter</p>
-                                            <p>Message </p>
-                                            <p>Hobby : <br> Message to Customer:</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                    </div>
-
-                    <!-- marketing TEAM  row  -->
-                    <div class="row team">
-                        <h2>Marketing TEAM </h2>
-                            
-
-                            <div class="row mt-4 g-3">
-                                <div class="col-sm-6">
-                                    <div class="row single_person">
-                                        <div class="col-sm-6">
-                                            <img src="assets/img/farzana.webp" class="img-fluid" alt="">
-                                        </div>
-                                        <div class="col-sm-6">
-                                            <div class="person_details">
-                                                <p>farzana kabir shormi </p>
-                                                <p>Hobby : <br> Message to Customer:</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-sm-6">
-                                    <div class="row single_person">
-                                        <div class="col-sm-6">
-                                            <img src="assets/img/monisha.webp" class="img-fluid" alt="">
-                                        </div>
-                                        <div class="col-sm-6 ">
-                                            <div class="person_details">
-                                                <p>Monisha paul</p>
-                                                <p>Message </p>
-                                                <p>Hobby : <br> Message to Customer:</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-sm-6">
-                                    <div class="row single_person">
-                                        <div class="col-sm-6">
-                                        <img src="assets/img/najmul.webp" class="img-fluid" alt="">
-                                        </div>
-                                        <div class="col-sm-6">
-                                            <div class="person_details">
-                                                <p>SM Nazmul huda</p>
-                                                <p>DIRECTOR , ADMIN& ACCOUNTING </p>
-                                                <p>Hobby : <br> Message to Customer:</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                         
-                    </div>
-
-                    <!-- about team section  -->
-                  
-                    <!-- why choose next drive  -->
-
-                    <div class="row why_choose">
-                        <div class="col-12">
-                            <h2>
-                                why choose NEXT DRIVE CO., LTD
-                            </h2>
-                            <img src="assets/img/whychoose.webp" class="img-fluid" alt="">
-                        </div>
-                    </div>
-
-                    <!-- our Slogan  -->
-                    <div class="row slogan">
-                        <div class="col-12">
-                            <h2>our Slogan</h2>
-                           <h3>
-                            YOUR MOST TRUSTED <br> CAR EXPORTING PARTNER FROM JAPAN
-                           </h3>
-                        </div>
-                    </div>
-
-                    <div class="row my-5 slogan_block">
-                        <div class="col-sm-5 text-center">
-                            <img src="assets/img/Next drive about us page (12).webp" class="img-fluid" alt="">
-                            <p>Choose your car from Japan Choose your freedom</p>
-                        </div>
-                        <div class="col-sm-6 text-center">
-                            <img src="assets/img/Next drive about us page (13).webp" class="img-fluid" alt="">
-                            <p>Nextdrive will ship your chosen car to any corner of the world</p>
-                        </div>
-                        <div class="col-md-9 m-auto">
-                            <div class="bar_line">
-
-                            </div>
-                        </div>
-                    </div>
+                   </div>
 
 
-                    <!--BANKING DETAILS row -->
 
-                    <div class="row banking_details">
-                        <div class="col-12">
-                            <h2>BANKING DETAILS</h2>
-                        </div>
-                        <div class="col-md-4 deatils_block">
-                            <p>BANK NAME: MUFG BANK LTD</p>
-                            <p>BRANCH NAME: HAMAMATSU BRANCH</p>
-                            <p> BANK ADDRESS: 311-14, TENMACHO , NAKA-KU,  
-                                HAMAMATSU-SHIZUOKA, JAPAN </p>  
-                            <p>ACCOUNT NAME: NEXT DRIVE CO., LTD </p>
-                            <p> ACCOUNT NUMBER: 563-0484413</p>
-                            <p> SWIFT CODE: BOTKJPJT</p>
-                               
-                            
-                        </div>
-                        <div class="col-md-4 deatils_block">
-                            <p>BANK NAME: MUFG BANK LTD</p>
-                            <p>BRANCH NAME: HAMAMATSU BRANCH</p>
-                            <p> BANK ADDRESS: 311-14, TENMACHO , NAKA-KU,  
-                                HAMAMATSU-SHIZUOKA, JAPAN </p>  
-                            <p>ACCOUNT NAME: NEXT DRIVE CO., LTD </p>
-                            <p> ACCOUNT NUMBER: 563-0484413</p>
-                            <p> SWIFT CODE: BOTKJPJT</p>
-                               
-                        </div>
-                        <div class="col-md-4 deatils_block">
-                            <p>BANK NAME: MUFG BANK LTD</p>
-                            <p>BRANCH NAME: HAMAMATSU BRANCH</p>
-                            <p> BANK ADDRESS: 311-14, TENMACHO , NAKA-KU,  
-                                HAMAMATSU-SHIZUOKA, JAPAN </p>  
-                            <p>ACCOUNT NAME: NEXT DRIVE CO., LTD </p>
-                            <p> ACCOUNT NUMBER: 563-0484413</p>
-                            <p> SWIFT CODE: BOTKJPJT</p>
-                               
-                        </div>
-
-                        <div class="col-md-9 m-auto">
-                            <div class="bar_line">
-
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- NEXT-DRIVE MEMORABLE MOMENTS row -->
-                     <div class="row memorable_gallery gy-4">
-                        <div class="col-12">
-                            <h2>NEXT-DRIVE MEMORABLE MOMENTS</h2>
-                        </div>
-                        <div class="col-sm-4">
-                            <img src="assets/img/Next drive about us page (14).webp" class="img-fluid" alt="">
-                        </div>
-                        <div class="col-sm-4">
-                            <img src="assets/img/Next drive about us page (15).webp" class="img-fluid" alt="">
-                        </div>
-                        <div class="col-sm-4">
-                            <img src="assets/img/Next drive about us page (16).webp" class="img-fluid" alt="">
-                        </div>
-                        <div class="col-sm-4">
-                            <img src="assets/img/Next drive about us page (17).webp" class="img-fluid" alt="">
-                        </div>
-                        <div class="col-sm-4">
-                            <img src="assets/img/Next drive about us page (18).webp" class="img-fluid" alt="">
-                        </div>
-                        <div class="col-sm-4">
-                            <img src="assets/img/Next drive about us page (19).webp" class="img-fluid" alt="">
-                        </div>
-                        <div class="col-sm-4">
-                            <img src="assets/img/Next drive about us page (20).webp" class="img-fluid" alt="">
-                        </div>
-                        <div class="col-sm-4">
-                            <img src="assets/img/Next-drive-about-us-page.png" class="img-fluid" alt="">
-                        </div>
-                        <div class="col-sm-4">
-                            <img src="assets/img/Next-drive-about-us-pag.png" class="img-fluid" alt="">
-                        </div>
-                     </div>
-
-                     <!-- contact section -->
-
-                     <div class="row contact_row">
-                        <div class="col-ms-6 m-auto text-center">
-                            <h5>WE'D LOVE TO HEAR FROM YOU</h5>
-                            <h6>LET'S GET IN TOUCH!</h6>
-                            <img src="assets/img/underline.png" class="img-fluid" alt="">
-                        </div>
-                     </div>
-                     <div class="row">
-                        <div class="col-sm-3 ">
-                            <div class="contact_info">
-                                <img src="assets/img/map.png" class="img-fluid" alt="">
-                                <h4>Address</h4>
-                                <p>306-7-301 NISHIZUKA HIGASHI KU, HAMAMATSU, SHIZUOKA, JAPAN  </p>
-                            </div>
-                        </div>
-                        <div class="col-sm-3 ">
-                            <div class="contact_info">
-                                <img src="assets/img/phone.png" class="img-fluid" alt="">
-                                <h4>phone</h4>
-                                <a href="tel:+(81)50-8880-4470 ">+(81)50-8880-4470 </a>
-                            </div>
-                        </div>
-                        <div class="col-sm-3 ">
-                            <div class="contact_info">
-                                <img src="assets/img/email.png" class="img-fluid" alt="">
-                                <h4>Email</h4>
-                                <a href="mailto:">info@next-drive.co.jp</a>
-                            </div>
-                        </div>
-                        <div class="col-sm-3 ">
-                            <div class="contact_info">
-                                <img src="assets/img/map.png" class="img-fluid" alt="">
-                                <h4>fax</h4>
-                                <a href="">053-533-8238</a>
-                            </div>
-                        </div>
-                     </div>
-
-                     <!-- contact form  -->
-                      <div class="row contact_form">
-                        <div class="col-sm-8">
-                            <form action="">
-                                <div class="row gy-4">
-                                    <div class="col-sm-4">
-                                        <input type="text" placeholder="Name" class="form-control">
-                                    </div>
-                                    <div class="col-sm-4">
-                                        <input type="email" placeholder="Email" class="form-control">
-                                    </div>
-                                    <div class="col-sm-4">
-                                        <input type="text" placeholder="Phone" class="form-control">
-                                    </div>
-                                    <div class="col-sm-4">
-                                        <label for="">Country</label>
-                                        <select name="" id="" class="form-control">
-                                            <option value="">Select One</option>
-                                            <option value="">USA</option>
-                                            <option value="">UK</option>
-                                            <option value="">UAE</option>
-                                        </select>
-                                    </div>
-                                    <div class="col-sm-8">
-                                        <textarea name="" rows="6" placeholder="comment" class="form-control" id=""></textarea>
-                                    </div>
-                                    <div class="col-12">
-                                        <input type="submit" value="send your message" class="btn btn-send">
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                        <div class="col-sm-4">
-                            <div class="opening_hours">
-                                <h3>opening hours</h5>
-                                <table width="100%">
-                                    <tr>
-                                        <td class="day">Sunday</td>
-                                        <td class="time">CLosed</td>
-                                    </tr>
-                                    <tr>
-                                        <td  class="day">monday</td>
-                                        <td class="time">9:00 AM to 9:00 PM</td>
-                                    </tr>
-                                    <tr>
-                                        <td  class="day">Tuesday</td>
-                                        <td class="time">9:00 AM to 9:00 PM</td>
-                                    </tr>
-                                    <tr>
-                                        <td  class="day">Thursday</td>
-                                        <td class="time">9:00 AM to 9:00 PM</td>
-                                    </tr>
-                                    <tr>
-                                        <td  class="day">Friday</td>
-                                        <td class="time">9:00 AM to 9:00 PM</td>
-                                    </tr>
-                                    <tr>
-                                        <td  class="day">Saturday</td>
-                                        <td class="time">9:00 AM to 9:00 PM</td>
-                                    </tr>
-                                </table>
-                            </div>
-                        </div>
-                      </div>
                 </div><!-- end of col-8 -->
 
                 <!-- ad image  -->
@@ -1241,7 +819,8 @@
         </div>
     </footer>
 
-     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://kit.fontawesome.com/d2d598fe43.js" crossorigin="anonymous"></script>

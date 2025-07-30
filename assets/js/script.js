@@ -108,53 +108,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
-// mobile search filter 
-// document.addEventListener("DOMContentLoaded", function () {
-//     const toggleBtn = document.getElementById("search-form-filter");
-//     const search_form_section = document.getElementById("search_form_section");
-
-//     toggleBtn.addEventListener("click", function () {
-//       const isHidden = search_form_section.classList.contains("d-none");
-
-//       if (isHidden) {
-//         search_form_section.classList.remove("d-none");
-//       } else {
-//         search_form_section.classList.add("d-none");
-//       }
-//     });
-//   });
-
-  // filter buttons 
-  // document.addEventListener("DOMContentLoaded", function () {
-  //   const toggleBtn = document.getElementById("sort_button");
-  //   const sorting_section = document.getElementById("sorting_section");
-
-  //   toggleBtn.addEventListener("click", function () {
-  //     const isHidden = sorting_section.classList.contains("d-none");
-
-  //     if (isHidden) {
-  //       sorting_section.classList.remove("d-none");
-  //     } else {
-  //       sorting_section.classList.add("d-none");
-  //     }
-  //   });
-  // });
-// seacrh by car filter 
-  //   document.addEventListener("DOMContentLoaded", function () {
-  //   const toggleBtn = document.getElementById("search_car");
-  //   const search_by_car_card = document.getElementById("search_by_car_card");
-
-  //   toggleBtn.addEventListener("click", function () {
-  //     const isHidden = search_by_car_card.classList.contains("d-none");
-
-  //     if (isHidden) {
-  //       search_by_car_card.classList.remove("d-none");
-  //     } else {
-  //       search_by_car_card.classList.add("d-none");
-  //     }
-  //   });
-  // });
-
   // pagination active class 
 
   document.addEventListener("DOMContentLoaded", function () {
@@ -236,3 +189,89 @@ if (wpAppClose !== null)
         console.log("OK")
         document.getElementById('wa_img').style.display = "none"
 });
+
+
+// accordion and tabs 
+
+//POTENZA var
+var POTENZA = {};
+
+ (function($){
+  "use strict";
+
+ /*************************
+      Predefined Variables
+*************************/
+   var $window = $(window),
+        $document = $(document),
+        $body = $('body'),
+        $countdownTimer = $('.countdown'),
+        $counter = $('.counter');
+/*************************
+          Tabs
+*************************/
+ POTENZA.tabs = function () {
+       var $tabsdata = $("#tabs li[data-tabs]"),
+           $tabscontent = $(".tabcontent"),
+           $tabsnav = $(".tabs li");
+
+      $tabsdata.on('click', function () {
+        $(this).parent().parent().find('.active').removeClass('active');
+        $(this).parent().parent().find('.tabcontent').hide();
+        var tab = $(this).data('tabs');
+        $(this).addClass('active');
+        $('#' + tab).fadeIn().show();
+      });
+
+      $tabsnav.on('click', function () {
+          var  cur = $tabsnav.index(this);
+          var elm =  $(this).parent().parent().find('.tabcontent:eq('+cur+')');
+          elm.addClass("pulse");
+          setTimeout(function() {
+                elm.removeClass("pulse");
+          }, 220);
+      });
+      $("li[data-tabs]").each(function() {
+         $(this).parent().parent().find('.tabcontent').hide().filter(':first').show();
+       });
+   }
+
+/*************************
+      Accordion
+*************************/
+  POTENZA.accordion = function () {
+     var   $acpanel = $(".accordion > .accordion-content"),
+           $acsnav = $(".accordion > .accordion-title > a");
+
+          $acpanel.hide().first().slideDown("easeOutExpo");
+          $acsnav.first().addClass("active");
+          $acsnav.on('click', function () {
+              var $this = $(this).parent().next(".accordion-content");
+              $acsnav.removeClass("active");
+              $(this).addClass("active");
+              $acpanel.not($this).slideUp("easeInExpo");
+              $(this).parent().next().slideDown("easeOutExpo");
+              return false;
+        });
+  }
+
+/****************************************************
+     POTENZA Window load and functions
+****************************************************/
+
+  //Document ready functions
+    $document.ready(function () {
+
+        POTENZA.tabs(),
+        POTENZA.accordion()
+    });
+
+})(jQuery);
+
+
+var mixer = mixitup('#blog_post');
+var mixer = mixitup('#gallery', {
+    selectors: {
+      control: '.filter'
+    }
+  });
