@@ -151,6 +151,9 @@ margin-left: 0%;
 .filter_button_mobile.about_page{
     display: block;
 }
+.filter_button_mobile.home_page{
+    display: none;
+}
 .about_page .brand_list ul {
         display: flex;
         justify-content: space-between;
@@ -181,6 +184,9 @@ margin-left: 0%;
 .about_page #wrap_search_by_car_card{
     display: block;
 }
+/* .about_page.home_page #wrap_search_by_car_card{
+    display: none;
+} */
     .steps-btn .btn-steps .steps-text {
         border-radius: 2px;
     }
@@ -222,6 +228,9 @@ margin-left: 0%;
     }
 }
 @media(max-width: 600px){
+    .filter_button_mobile.home_page{
+    display: block;
+}
     .inner-intro {
     height: 250px;
     display: block;
