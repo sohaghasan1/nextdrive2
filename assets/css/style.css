@@ -409,7 +409,7 @@ label[data-color="teal"]   { background-color: #004d4a; }
 }
 
 .main_content {
-    padding: 20px 0px;
+    padding: 10px 0px;
 }
 
 .brand_list {
@@ -743,8 +743,7 @@ footer a {
 .profil_edit {
 }
 
-.profil_edit li {
-}
+.profil_edit li {text-align: center;margin-bottom: 10px;}
 
 .profil_edit li a {
 }
@@ -760,11 +759,15 @@ footer a {
 
 .mobile_nav ul {
     padding: 10px 0px;
+    list-style: none;
 }
 
 .mobile_nav ul li.nav-item {
     display: flex;
     margin-bottom: 5px;
+    justify-content: center;
+    margin-bottom: 20px;
+    margin-right: 0;
 }
 
 .mobile_nav ul li.nav-item i {
@@ -774,8 +777,8 @@ footer a {
 
 .mobile_nav ul li a {
     font-weight: 400;
-    font-size: 12px;
-    color: rgb(69, 69, 69) !important;
+    font-size: 16px;
+    color: #fff;
 }
 
 .mobile_nav .navbar-nav li a i {
@@ -1848,7 +1851,26 @@ display: flex;
     background-color: #fff;
 }
 .show-mobile {
-    display: none;
+    display: flex;
+    align-items: center;
+    border: 2px solid #E7E7E7;
+    border-radius: 0;
+    padding: 8px 4px;
+    position: absolute;
+    left: 50%;
+}
+.show-mobile:hover{
+    border: 2px solid #E7E7E7;
+}
+.show-mobile h4{
+    margin: 0 8px;
+    font-size: 14px;
+    color: #090808;
+    font-weight: 600;
+}
+.show-mobile i{
+    color: #F85252;
+    font-size: 20px;
 }
 .steps-btn .btn-step3 {
     background-color: #F85252;
@@ -2288,4 +2310,31 @@ padding: 0px 20px 10px;
     color: #fff;
     border-radius: 5px;
     z-index: 2;
+}
+.breadcrumbs{
+    margin-bottom: 8px;
+    display: none;
+}
+.breadcrumbs a{
+    color: #606060;
+    font-size: 14px;
+    font-weight: 500;
+}
+.breadcrumbs a.active{
+     color: #CB0A07;
+}
+.breadcrumbs a:hover{
+    color: #CB0A07;
+}
+.offcanvas.offcanvas-start{
+    width: 100%;
+    background-color: #0000007f;
+}
+.close{
+    text-align: right;
+    color: #fff;
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+    float: right;
 }

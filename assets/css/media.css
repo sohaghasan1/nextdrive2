@@ -10,6 +10,7 @@
     }
 }
 @media(max-width: 991px){
+
 .single_person img {
     height: 200px;
 }
@@ -228,6 +229,9 @@ margin-left: 0%;
     }
 }
 @media(max-width: 600px){
+    .breadcrumbs{
+    display: block;
+}
     .filter_button_mobile.home_page{
     display: block;
 }
@@ -559,7 +563,16 @@ margin-left: 0%;
     display: block;
 }
 }
+@media(max-width: 430px){
+.hero_section {
+    min-height:95vh;
+}
+}
+    
 @media(max-width: 400px){
+    .hero_section {
+    min-height: 105vh;
+}
     .navbar-brand{
         margin-right: 0;
     }
@@ -567,8 +580,10 @@ margin-left: 0%;
     margin-right: 15px;
     font-size: 12px;
 }
+
 }
 @media(max-width: 375px){
+    
     .cars_info_box ul {
     flex-wrap: wrap;
     }

@@ -110,54 +110,57 @@
                                     </li>
                                 </ul>
                             </div>
-                            <button class="navbar-toggler dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                        <!-- offcanvas menu  -->
+                            <button class="navbar-toggler dropdown-toggle" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop">
                             <div class="menu example5"><span></span></div>
                             </button>
-                            <div class="dropdown-menu">
-                                    <ul class="navbar-nav  mb-2 mb-lg-0">
-                                        <li class="nav-item">
-                                            <i class="fa-solid fa-circle"></i>
-                                            <a class="nav-link" href="#">Home</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <i class="fa-solid fa-circle"></i>
-                                            <a class="nav-link" href="#">About Us</a>
-                                        </li>
-                                    
-                                        <li class="nav-item">
-                                            <i class="fa-solid fa-circle"></i>
-                                            <a class="nav-link" aria-disabled="true">Blog</a>
-                                        </li>
-                                         <li class="nav-item">
-                                            <i class="fa-solid fa-circle"></i>
-                                            <a class="nav-link" aria-disabled="true">FAQ</a>
-                                        </li>
-                                         <li class="nav-item">
-                                            <i class="fa-solid fa-circle"></i>
-                                            <a class="nav-link" aria-disabled="true">Contact</a>
-                                        </li>
-                                    </ul>
+                            <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop" aria-labelledby="staticBackdropLabel">
+                                <div class="offcanvas-header justify-content-end">
+                                    <button type="button" class="close" data-bs-dismiss="offcanvas" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+                                </div>
+                                <div class="offcanvas-body">
+                                    <div>
+                                        <ul class="navbar-nav  mb-2 mb-lg-0">
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="#">Home</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="#">About Us</a>
+                                            </li>
+                                        
+                                            <li class="nav-item">
+                                                <a class="nav-link" aria-disabled="true">Blog</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" aria-disabled="true">FAQ</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" aria-disabled="true">Contact</a>
+                                            </li>
+                                        </ul>
 
-                                    <ul class="profil_edit">
-                                        <li>
-                                            <a href="">
-                                                <i class="fa-regular fa-circle-user"></i>
-                                                Your Profile
-                                            </a>
-                                        </li>
-                                         <li>
-                                            <a href="">
-                                               <i class="fa-solid fa-gear"></i>
-                                                Seetings
-                                            </a>
-                                        </li>
-                                         <li>
-                                            <a href="">
-                                                <i class="fa-solid fa-arrow-right-from-bracket"></i>
-                                                Log out
-                                            </a>
-                                        </li>
-                                    </ul>
+                                        <ul class="profil_edit">
+                                            <li>
+                                                <a href="">
+                                                    <i class="fa-regular fa-circle-user"></i>
+                                                    Your Profile
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="">
+                                                <i class="fa-solid fa-gear"></i>
+                                                    Seetings
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="">
+                                                    <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                                                    Log out
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </nav>
@@ -420,6 +423,15 @@
                 
                 <!-- about details  -->
                 <div class="col-md-12 col-lg-8">
+
+                    <!-- breadcrumbs for mobile  -->
+                     <div class="row breadcrumbs">
+                        <div class="col-12 ">
+                            <span>
+                                <a href="">Home</a> > <a href="" class="active">Advance Search</a>
+                            </span>
+                        </div>
+                     </div>
                     <!-- filter buttons for mobile device  -->
                     <div class="filter_button_mobile about_page">
                         <div class="row">
