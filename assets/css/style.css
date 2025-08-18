@@ -1850,27 +1850,28 @@ display: flex;
     color: #e72c2d;
     background-color: #fff;
 }
-.show-mobile {
+.show-mobile.buy-search-stock-btn {
     display: flex;
     align-items: center;
     border: 2px solid #E7E7E7;
     border-radius: 0;
     padding: 8px 4px;
     position: absolute;
-    left: 50%;
+    left: 200px;
+    top: 250px;
 }
-.show-mobile:hover{
+.buy-search-stock-btn:hover{
     border: 2px solid #E7E7E7;
 }
 .show-mobile h4{
     margin: 0 8px;
-    font-size: 14px;
+    font-size: 18px;
     color: #090808;
     font-weight: 600;
 }
 .show-mobile i{
     color: #F85252;
-    font-size: 20px;
+    font-size: 24px;
 }
 .steps-btn .btn-step3 {
     background-color: #F85252;
@@ -2337,4 +2338,13 @@ padding: 0px 20px 10px;
     border: none;
     font-size: 20px;
     float: right;
+}
+.btn-steps img{
+    margin-top: 10px;
+}
+.img-div2 .draw-buy-car {
+    position: absolute;
+    top: -5%;
+    left: 38%;
+    width: 20%;
 }

@@ -11,6 +11,13 @@
 }
 @media(max-width: 991px){
 
+.show-mobile.buy-search-stock-btn {
+    left: 100px;
+    top: 150px;
+}
+.show-mobile i {
+    font-size: 10px;
+}
 .single_person img {
     height: 200px;
 }
@@ -203,9 +210,11 @@ margin-left: 0%;
     .buy-search-menu-stock-btn {
         position: absolute;
         top: 50%;
-        left: 32%;
+        left: 12%;
         padding: 3px 0px;
         border: 2px solid #E7E7E7;
+        width: auto;
+        display: flex;
     }
         .buy-search-menu-stock-btn h4 {
         margin-bottom: 0;
@@ -260,13 +269,26 @@ margin-left: 0%;
         font-size: 31px;
         padding-top: 3px;
     }
+    .img-div1 img {
+    width: 100%;
+}
     .how-to-buy {
         font-size: 50px;
         margin-bottom: 25px;
     }
     .steps-btn .btn-steps {
-        height: 235px;
+        height: 200px;
     }
+    .show-mobile.buy-search-stock-btn {
+    left: 90px;
+    top: 130px;
+}
+.show-mobile h4 {
+    font-size: 14px;
+}
+
+
+
  .about_page .brand_list ul li {
         width: 23%;
         margin-left: 0;
